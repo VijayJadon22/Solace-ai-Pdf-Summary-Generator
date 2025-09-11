@@ -3,7 +3,7 @@ export default function Home() {
   return (
     <div className="">
       <h1>Solace</h1>
-      <Button variant={"outline"}>
+      <Button >
         Click Me!
       </Button>
     </div>
