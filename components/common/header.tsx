@@ -12,7 +12,7 @@ export default function Header() {
         >
           <FileText className="w-5 h-5 lg:w-8 lg:h-8 text-gray-800 hover:rotate-12 transform transition-all duration-200 ease-in-out" />
           <span className="font-extrabold lg:text-xl text-gray-900">
-            Solace ai
+            Solace'ai
           </span>
         </NavLink>
       </div>
