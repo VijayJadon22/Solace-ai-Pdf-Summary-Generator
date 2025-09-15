@@ -1,7 +1,14 @@
 import { BrainCircuit, FileOutput, FileText, MoveRight } from "lucide-react";
+import { ReactNode } from "react";
 // import { MotionH2, MotionH3, MotionDiv } from '../common/motion-wrapper';
 
-const steps = [
+type Step = {
+  icon: ReactNode;
+  label: string;
+  description: string;
+};
+
+const steps: Step[] = [
   {
     icon: <FileText size={64} strokeWidth={1.5} />,
     label: "Upload your PDF",
@@ -93,7 +100,7 @@ export default function HowitworksSection() {
   );
 }
 
-const StepItem = ({ icon, label, description }) => {
+const StepItem = ({ icon, label, description }: Step) => {
   return (
     <div className="group relative w-full rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xs transition-colors hover:border-rose-500/50">
       <div className="flex h-full flex-col gap-4">
